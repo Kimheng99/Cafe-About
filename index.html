@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Koulen&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<style>
+    .content-container {
+        width: 100%;
+        height: 400px;
+        background: url("assets/backgroud-caffee.jpeg");
+        animation: heng 0.7s 1;
+        
+        
+        
+    }
+    @keyframes heng {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .content-container .content {
+        background-color: rgba(0, 0, 0, 0.456);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-container .content .box-content {
+        width: 500px;
+        height: 200px;
+        /* background-color: azure; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-container .content .box-content h1 {
+        font-size: 40px;
+        font-weight:900;
+        color: #fff;
+    }
+    .content-container .content .box-content p {
+        font-weight: 500;
+        color: #fff;
+    }
+    .des-container {
+        width: 80%;
+        /* background-color: aqua; */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 30px auto;
+        
+
+    }
+    .des-container .des-mission {
+        width: 500px;
+        height: 200px;
+        /* background-color: azure; */
+        margin: 20px auto;
+    }
+    .des-container .des-mission h1 {
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .des-container .des-mission p {
+        font-weight: 400;
+    }
+    .des-container .des-image {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 100px;
+        /* background-color: chartreuse; */
+    }
+    .des-container .des-image .box1 {
+        height: 100%;
+        width: 23.5%;
+        margin-right: 1.5%;
+        /* background-color: red; */
+        box-shadow: 0px 10px 25px hsl(0, 1%, 66%);
+        transition: 0.5s;
+    }
+    .des-container .des-image .box1:hover {
+        transform: scale(1.1);
+    }
+    .des-container .des-image .box1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 15px;
+        
+    }
+    .des-container .h1-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100px;
+    }
+    .des-container .h1-title h1 {
+        font-weight: 900;
+    }
+    .des-container .des-icon {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 220px;
+        
+
+    }
+    .des-container .des-icon .card {
+        height: 100%;
+        width: 32%;
+        margin-right: 2%;
+        /* background-color: red; */
+        
+    }
+
+
+    .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background: #f6e3cf;
+    color: #d28b3c;
+    font-size: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+    }
+
+    .card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    text-indent: 20px;
+    }
+    .founder-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 300px;
+        margin-bottom: 100px;
+        /* background-color: chartreuse; */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .founder-container .box1 {
+        width: 45%;
+        /* background-color: #d28b3c; */
+        padding: 10px 40px;
+    }
+    .box1 .avatar {
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 15px;
+        border-radius: 50%;
+        padding: 4px;
+        background: #f0d3b5;
+        }
+
+    .box1 .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        background: #eee;
+        }
+
+    .box1 h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #222;
+        }
+
+    .box1 .role {
+        display: block;
+        font-size: 14px;
+        color: #d28b3c;
+        font-weight: 500;
+        margin-bottom: 12px;
+        }
+
+    .box1 p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #666;
+        }
+    .navbar ul li:nth-child(3){
+    background-color: rgb(246, 195, 128);
+    transition: 0.7s;
+    }
+    .navbar ul li:nth-child(3):hover{
+        transform: scale(1.2);
+    }
+</style>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/caffee-logo.jpg" alt="">
+                <p>Smile Caffee.</p>
+            </div>
+            <div class="search-buttom">
+                
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="input-buttom" placeholder="Search">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index1.html">Menu</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/index3.html">Contact</a></li>
+                    <li class="order">
+                        <a href="/index4.html">
+                            <div class="cicle"></div>
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </a>
+                        
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+    </header>
+    <div class="content-container">
+        <div class="content">
+            <div class="box-content">
+            <h1>More Than Just Coffee</h1>
+            <p>Discover the story, passion, and people behind your favorite cup.</p>
+        </div>
+    </div>
+        
+        
+    </div>
+    <div class="des-container">
+        <div class="des-mission">
+            <h1>Our Mission</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, numquam culpa vitae recusandae facere magni vero ipsam minus earum quibusdam.</p>
+        </div>
+        <div class="des-image">
+            <div data-aos="zoom-in" class="box1"><img src="assets/1.jpg" alt=""></div>
+            <div data-aos="zoom-in" class="box1"><img src="assets/2.jpg" alt=""></div>
+            <div data-aos="zoom-in" class="box1"><img src="assets/3.jpg" alt=""></div>
+            <div data-aos="zoom-in" class="box1"><img src="assets/4.jpg" alt=""></div>
+            
+        </div>
+        <div class="h1-title">
+            <h1>Our Core Values</h1>
+        </div>
+        <div class="des-icon">
+            <div class="card">
+                 <div class="icon">🌿</div>
+                <h3>Locally Sourced</h3>
+                <p>
+                We partner with local farms and artisans to bring you the freshest
+                ingredients and support our community.
+                </p>
+            </div>
+            <div class="card">
+                <div class="icon">👥</div>
+                <h3>Community Focused</h3>
+                <p>
+                Our cafe is a hub for connection, conversation, and creativity.
+                Everyone is welcome here.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👍</div>
+                <h3>Handcrafted Quality</h3>
+                <p>
+                From our espresso to our pastries, everything is made with care,
+                skill, and a passion for perfection.
+                </p>
+            </div>
+        </div>
+        <div class="h1-title">
+            <h1>Meet the Founder</h1>
+        </div>
+        <div class="founder-container">
+            <div class="box1">
+                <div class="avatar">
+                  <img src="assets/founder.jpg" alt="Founder">
+                </div>
+
+                <h3>KimHeng</h3>
+                <span class="role">Co-Founder & Head Barista</span>
+
+                <p>
+                    KimHeng’s lifelong dream was to create a neighborhood spot where people
+                    could find not just great coffee, but a sense of belonging. Her
+                    expertise is in every cup we serve.
+                </p>
+                
+            </div>
+        </div>
+
+    </div>
+       <footer>
+     <div class="foot-top">
+        <div class="foot-box1">
+            <h1>The Smile Caffee</h1>
+            <p>Your daily ritual, perfected.</p>
+            <div class="foot-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+        <div class="foot-box1">
+            <h1>Contact Us</h1>
+            <p>123 Coffee lane , Banglades, CA</p>
+            <p>(+855)966448345</p>
+            <p>nutkimheng000@gmail.com</p>
+            
+        </div>
+     </div>
+     <hr>
+     <div class="foot-down">
+        <p>&copy; 2024 The Cozy Bean. All Rights Reserved.</p>
+     </div>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
